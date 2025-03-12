@@ -34,7 +34,7 @@ const containerCustomTreatmentItems = document.querySelector("#custom-treatment-
 offeredTreatments.forEach((item, index) => {
   containerCustomTreatmentItems.innerHTML += `
     <article>
-      <img src="./service-${index + 1}.avif" alt="${item.title}">
+      <img src="./assets/images/service-${index + 1}.avif" alt="${item.title}">
       <span></span>
       <h4 class="custom-treatment-items__title">${item.title}</h4>
       <p>${item.description}</p>
