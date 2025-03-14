@@ -299,7 +299,9 @@ div#dt-1505913242232-e64ea019-90fc ul>li:not(.has-mega-menu) ul.sub-menu li.curr
 }
 
 .container {
-  width: 1230px;
+  max-width: 1230px;
+  width: 100%;
+  padding: 0 20px;
   margin: 0 auto;
   position: relative;
   clear: both;
@@ -735,42 +737,6 @@ video {
 
 /* Note: Design for a width of 960px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-
-  /*----*****---- << Container >> ----*****----*/
-  .container,
-  .type5.tribe_events .container .container,
-  .layout-boxed .vc_row .dt-sc-stretch-row-content {
-    width: 900px;
-  }
-
-  .container.fill-container,
-  .page-template-tpl-fullwidth .section-wrapper.fullwidth-section .container.fill-stretch-row {
-    width: 930px;
-  }
-
-  .layout-boxed .wrapper {
-    width: 940px;
-  }
-
-  #header .dt-header-tpl .sticky-wrapper .apply-sticky-header,
-  .page-with-sidebar .vc_row-no-padding .dt-sc-newsletter-section.type7 {
-    max-width: 900px;
-  }
-
-  #primary {
-    width: 590px;
-  }
-
-  #primary.with-both-sidebar {
-    width: 330px;
-  }
-
-  #secondary,
-  #secondary-right,
-  #secondary-left {
-    width: 250px;
-  }
-
   .layout-boxed .vc_row.vc_row-no-padding {
     margin: 0 -20px;
   }
@@ -1470,23 +1436,6 @@ video {
 
 /* Note: Design for a width of 480px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-
-  /*----*****---- << Container >> ----*****----*/
-  .container,
-  .type5.tribe_events .container .container,
-  .layout-boxed .vc_row .dt-sc-stretch-row-content {
-    width: 420px;
-  }
-
-  .container.fill-container,
-  .page-template-tpl-fullwidth .section-wrapper.fullwidth-section .container.fill-stretch-row {
-    width: 450px;
-  }
-
-  .layout-boxed .wrapper {
-    width: 460px;
-  }
-
   #primary.with-left-sidebar,
   #primary.with-right-sidebar,
   #primary.with-both-sidebar {
@@ -2380,7 +2329,6 @@ h2 {
 }
 
 .custom-hero {
-  min-height: 100vh;
   width: 100%;
   background-image: url(https://gnerisdev.github.io/landing-page_livraison2/assets/img/background-1.png);
   position: relative;
@@ -2699,12 +2647,6 @@ h2 {
   position: relative;
 }
 
-.custom-about .image-column .inner-column {
-  position: relative;
-  padding-bottom: 24px;
-}
-
-
 .custom-about .image-column .image-1 {
   position: relative;
 }
@@ -2868,7 +2810,7 @@ ul {
 }
 
 .section.footer {
-  padding: 20px 10vw;
+  padding: 20px 0;
 }
 
 @media screen and (max-width: 1239.98px) {
@@ -2910,6 +2852,7 @@ ul {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin: auto;
 }
 
 @media screen and (min-width: 768px) {
